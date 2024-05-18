@@ -1,0 +1,8 @@
+2024-05-18 02:21:12,518.v2_listen_for_messages.INFO ==================================================
+2024-05-18 02:21:12,518.v2_listen_for_messages.INFO Today is 2024-05-18 at 02:21 AM
+2024-05-18 02:21:12,518.v2_listen_for_messages.INFO Running on: nt Windows 11
+2024-05-18 02:21:12,518.v2_listen_for_messages.INFO Python version:  3.12.1
+2024-05-18 02:21:12,519.v2_listen_for_messages.INFO Python path: C:\VScode2024\Streaming Data\streaming-03-rabbitmq\.venv
+2024-05-18 02:21:12,519.v2_listen_for_messages.INFO Working dir: C:\VScode2024\Streaming Data\streaming-03-rabbitmq
+2024-05-18 02:21:12,519.v2_listen_for_messages.INFO ==================================================
+2024-05-18 02:21:12,535.v2_listen_for_messages.INFO  [*] Waiting for messages. To exit press CTRL+C
