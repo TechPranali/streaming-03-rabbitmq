@@ -37,7 +37,7 @@ def send_message(host: str, queue_name: str, message: str):
         message (str): the message to be sent to the queue
 
     """
-
+    conn = None  # Initialize conn to None to ensure it's in the broader scope
     try:
         # create a blocking connection to the RabbitMQ server
         conn = pika.BlockingConnection(pika.ConnectionParameters(host))
@@ -58,12 +58,12 @@ def send_message(host: str, queue_name: str, message: str):
         logger.error(f"Error: Connection to RabbitMQ server failed: {e}")
         sys.exit(1)
     finally:
-        # close the connection to the server
-        conn.close()
-
-
+        # Check if conn was successfully created before trying to close it
+        if conn:
+            conn.close()
+        
 # ---------------------------------------------------------------------------
 # If this is the script we are running, then call some functions and execute code!
 # ---------------------------------------------------------------------------
 if __name__ == "__main__":
-    send_message("llllocalhost", "hello", "Hello World!")
+    send_message("localhost", "hello", "Hello World!")
